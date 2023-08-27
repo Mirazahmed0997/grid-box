@@ -86,7 +86,7 @@ body {
     padding: 30px;
   }
   .card .img img{
-    width: 450px;
+    width: 80%;
     height: 300px;
   }
   .details p{
@@ -100,3 +100,16 @@ body {
     color: #f9f9f9;
     padding: 10px 20px;
   }
+
+  @media only screen and (max-width: 600px)
+   {
+    .card-body{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+      .logo img{
+        display: none;
+      }
+     
+      
+   }
